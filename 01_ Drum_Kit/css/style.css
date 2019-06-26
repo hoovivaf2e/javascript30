@@ -1,18 +1,15 @@
-/* line 1, ../sass/style.sass */
 html {
   font-size: 10px;
   background: url(../images/bg.jpg) bottom center;
   background-size: cover;
 }
 
-/* line 6, ../sass/style.sass */
 body, html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-/* line 11, ../sass/style.sass */
 .keys {
   display: flex;
   flex: 1;
@@ -21,7 +18,6 @@ body, html {
   justify-content: center;
 }
 
-/* line 18, ../sass/style.sass */
 .key {
   border: 0.4rem solid black;
   border-radius: 0.5rem;
@@ -36,20 +32,17 @@ body, html {
   text-shadow: 0 0 0.5rem black;
 }
 
-/* line 31, ../sass/style.sass */
 .playing {
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
 }
 
-/* line 36, ../sass/style.sass */
 kbd {
   display: block;
   font-size: 4rem;
 }
 
-/* line 40, ../sass/style.sass */
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
