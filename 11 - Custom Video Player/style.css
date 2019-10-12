@@ -1,14 +1,11 @@
-/* line 1, ../sass/style.sass */
 html {
   box-sizing: border-box;
 }
 
-/* line 5, ../sass/style.sass */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 9, ../sass/style.sass */
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +18,6 @@ body {
   justify-content: center;
 }
 
-/* line 21, ../sass/style.sass */
 .player {
   max-width: 750px;
   border: 5px solid rgba(0, 0, 0, 0.2);
@@ -31,20 +27,20 @@ body {
   overflow: hidden;
 }
 
-/* This css is only applied when fullscreen is active. */
- * &:fullscreen 
- *   max-width: none
- *   width: 100%
- *
- * &:-webkit-full-screen 
- *   max-width: none
- *   width: 100% */
-/* line 39, ../sass/style.sass */
+.player:fullscreen {
+  max-width: none;
+  width: 100%;
+}
+
+.player:-webkit-full-screen {
+  max-width: none;
+  width: 100%;
+}
+
 .player__video {
   width: 100%;
 }
 
-/* line 43, ../sass/style.sass */
 .player__button {
   background: none;
   border: 0;
@@ -56,18 +52,16 @@ body {
   cursor: pointer;
   max-width: 50px;
 }
-/* line 54, ../sass/style.sass */
+
 .player__button:focus {
   border-color: #ffc600;
 }
 
-/* line 58, ../sass/style.sass */
 .player__slider {
   width: 10px;
   height: 30px;
 }
 
-/* line 63, ../sass/style.sass */
 .player__controls {
   display: flex;
   position: absolute;
@@ -79,22 +73,18 @@ body {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* line 74, ../sass/style.sass */
 .player:hover .player__controls {
   transform: translateY(0);
 }
 
-/* line 78, ../sass/style.sass */
 .player:hover .progress {
   height: 15px;
 }
 
-/* line 82, ../sass/style.sass */
 .player__controls > * {
   flex: 1;
 }
 
-/* line 86, ../sass/style.sass */
 .progress {
   flex: 10;
   position: relative;
@@ -106,7 +96,6 @@ body {
   cursor: ew-resize;
 }
 
-/* line 97, ../sass/style.sass */
 .progress__filled {
   width: 50%;
   background: #ffc600;
@@ -114,19 +103,17 @@ body {
   flex-basis: 50%;
 }
 
-/* unholy css to style input type="range" */
-/* line 106, ../sass/style.sass */
 input[type=range] {
   -webkit-appearance: none;
   background: transparent;
   width: 100%;
   margin: 0 5px;
 }
-/* line 113, ../sass/style.sass */
+
 input[type=range]:focus {
   outline: none;
 }
-/* line 117, ../sass/style.sass */
+
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
@@ -136,7 +123,7 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
   border: 0.2px solid rgba(1, 1, 1, 0);
 }
-/* line 127, ../sass/style.sass */
+
 input[type=range]::-webkit-slider-thumb {
   height: 15px;
   width: 15px;
@@ -147,11 +134,11 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -3.5px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
-/* line 138, ../sass/style.sass */
+
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #bada55;
 }
-/* line 142, ../sass/style.sass */
+
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 8.4px;
@@ -161,7 +148,7 @@ input[type=range]::-moz-range-track {
   border-radius: 1.3px;
   border: 0.2px solid rgba(1, 1, 1, 0);
 }
-/* line 152, ../sass/style.sass */
+
 input[type=range]::-moz-range-thumb {
   box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
   height: 15px;

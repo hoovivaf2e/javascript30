@@ -1,5 +1,5 @@
 html {
-  background: #018DED url(../images/pattern-design-texture.jpg);
+  background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=5);
   background-size: cover;
   font-family: "helvetica neue";
   text-align: center;
@@ -25,13 +25,13 @@ body {
   padding: 2rem;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), insert 0 0 0 3px #EFEFEF, insert 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.clock .clock-face {
+.clock-face {
   position: relative;
   width: 100%;
   height: 100%;
   transform: translateY(-3px);
 }
-.clock .clock-face .hand {
+.hand {
   width: 50%;
   height: 6px;
   background: black;
