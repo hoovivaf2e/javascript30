@@ -2,11 +2,9 @@
 
 鍵盤爵士鼓
 
-功能
-按下鍵盤，出現相對應的聲音
-
-畫面
-按下鍵盤，畫面上的字母方塊有些微放大，且有黃色陰影的效果
+- 功能
+  - 按下鍵盤，出現相對應的聲音
+  - 按下鍵盤，畫面上的字母方塊會微放大，且有黃色陰影的效果
 
 ## 使用到的語法
 
@@ -31,18 +29,18 @@ function myFunction(event) {
 
 - classList: The classList property returns the class name(s) of an element, as a DOMTokenList object. This property has these methods: add, remove, toggle, contains and item.
 
-Add the "mystyle" class to a <div> element:
+Add the "mystyle" class to a element:
 ```javascript
 document.getElementById("myDIV").classList.add("mystyle");
 ```
 
-Get the class name(s) of a <div> element:
+Get the class name(s) of a element:
 ```javascript
 <div id="myDIV" class="mystyle anotherClass thirdClass">I am a DIV element</div>
 var x = document.getElementById("myDIV").classList;
 ```
 
-Find out how many class names a <div> element has:
+Find out how many class names a element has:
 ```javascript
 var x = document.getElementById("myDIV").classList.length;
 ```
