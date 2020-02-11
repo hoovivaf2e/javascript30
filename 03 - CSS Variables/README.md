@@ -2,6 +2,8 @@
 
 - 用JS與CSS搭配製作一個即時的濾淨效果， 特效為調整內距、模糊、邊框色
 
+![](https://github.com/hoovivaf2e/javascript30/blob/master/01%20-%20JavaScript%20Drum%20Kit/demo_3.png)
+
 ### 使用到的語法 Javascript
 
 - dataset: 

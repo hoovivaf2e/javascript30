@@ -5,6 +5,8 @@
 }
 
 img {
+  width: 40%;
+  height: 40%;
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
