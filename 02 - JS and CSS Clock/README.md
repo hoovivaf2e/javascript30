@@ -8,7 +8,7 @@
     - 通過時分秒對一圈360度進行映射，確定每一個指針所需旋轉的角度。
     - 通過CSS的transform：rotate(deg)，來調整指針在鍵盤中的位置。
 
-![](https://github.com/hoovivaf2e/javascript30/blob/master/01%20-%20JavaScript%20Drum%20Kit/demo_2.png)
+![](https://github.com/hoovivaf2e/javascript30/blob/master/02%20-%20JS%20and%20CSS%20Clock/demo_2.png)
 
 ### 使用到的語法 Javascript
 
