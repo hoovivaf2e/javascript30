@@ -8,12 +8,10 @@
     - 通過時分秒對一圈360度進行映射，確定每一個指針所需旋轉的角度。
     - 通過CSS的transform：rotate(deg)，來調整指針在鍵盤中的位置。
 
-## 使用到的語法
-
-### Javascript
+### 使用到的語法 Javascript
 
 - getSeconds/getMinutes/getHours: 
-    The getSeconds()/getMinutes()/getHours() method returns the second/minute/hour for the specified date, according to local time.
+    getSeconds() 返回時間的秒；getMinutes() 返回時間的分；getHours() 返回時間的時，皆以本地時間顯示。
 
 ```javascript
 const now = new Date();
@@ -21,7 +19,7 @@ console.log(now.getHours());
 ```
 
 - transform: 
-    The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.
+    transform 屬性向元素使用於 2D 或 3D 轉換。該屬性可以旋轉，縮放，傾斜或平移指定元素。
 
 Rotate a div element:
 ```javascript
@@ -29,7 +27,7 @@ document.getElementById("myDIV").style.transform = "rotate(7deg)";
 ```
 
 - setInterval: 
-    The window object allows execution of code at specified time intervals.
+    setInterval() 方法重複調用一個函數或執行一段程式碼，在每次調用之間具有固定的時間延遲。
 
 Click a button. Wait 3 seconds, and the page will alert "Hello":
 ```html
@@ -42,3 +40,14 @@ function myFunction() {
 </script>
 ```
 
+### 使用到的語法 CSS
+
+- box-shadow: h-shadow v-shadow blur spread color inset/outset;
+
+- transform: none|transform-functions;
+    *
+- transform-origin: x-axis y-axis z-axis;
+
+- transition: property duration timing-function delay;
+
+- transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n);
