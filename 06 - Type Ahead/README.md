@@ -4,7 +4,7 @@
 
 ![](https://github.com/hoovivaf2e/javascript30/blob/master/06%20-%20Type%20Ahead/6_typeahead.png)
 
-### 使用到的語法 Javascript
+## 使用到的語法 Javascript
 
 - `fetch()`: 發送 HTTP Request 或取得網路資料。基於Promise語法結構。回傳promise對象，使用 then 處理請求成功的回傳值，使用 catch 作為請求失敗的錯誤捕捉。
 
