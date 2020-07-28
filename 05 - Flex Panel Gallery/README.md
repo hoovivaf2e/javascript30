@@ -36,7 +36,7 @@
         * [FLEXBOX FROGGY](https://flexboxfroggy.com/#zh-tw)
         * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-- 比較 *, <h1>, .content #content, inline css, 載入CSS 等的 CSS 優先順序
+- 比較 `*`, `<h1>`, `.content`, `#content`, `inline css`, `載入CSS` 等的 CSS 優先順序
 
     * 行內(inline)套用CSS ＞ HTML內部載入CSS ＞ 外部載入CSS
     * id選擇器 > class選擇器 > 標籤元素
