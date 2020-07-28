@@ -2,7 +2,7 @@
 
 - 本章主要是熟悉 Array 的幾個基本方法，包含`some()`、`every()`、`find()`、`findIndex()`。請打開 HTML 後在 Console 面板中查看輸出結果。
 
-### 使用到的語法 Javascript
+## 使用到的語法 Javascript
 
 - `some()`: 用來檢查陣列裡面是否有一些符合條件。只要有一個以上符合條件就會回傳 true，全部都不是的話會回傳 false。
     
