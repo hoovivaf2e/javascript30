@@ -4,12 +4,12 @@
 
 ![](https://github.com/hoovivaf2e/javascript30/blob/master/03%20-%20CSS%20Variables/demo_3.png)
 
-### 使用到的語法 Javascript
+## 使用到的語法 Javascript
 
 - dataset: 
     用dataset可以取出在HTML中的一個自定義資料屬性的名稱以 data- 開頭的屬性，也等同於getAttribute。
 
-### 使用到的語法 CSS
+## 使用到的語法 CSS
 
 - :root
     用於定義全域變數
