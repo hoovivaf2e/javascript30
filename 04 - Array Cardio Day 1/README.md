@@ -2,7 +2,7 @@
 
 - 本章主要是熟悉 Array 的幾個基本方法，包含`filter()`、`map()`、`sort()`、`reduce()`。請打開 HTML 後在 Console 面板中查看輸出結果。
 
-### 使用到的語法 Javascript
+## 使用到的語法 Javascript
 
 - `filter()`: 從指定陣列中篩選出「符合條件」的元素，並回傳陣列。
 
