@@ -4,7 +4,7 @@
 
 ![](https://github.com/hoovivaf2e/javascript30/blob/master/05%20-%20Flex%20Panel%20Gallery/5_flexpanelgallery.png)
 
-### 使用到的語法 CSS
+## 使用到的語法 CSS
 
 - `flex`: 
 
@@ -43,7 +43,7 @@
     * 總結排序：!important > 行內樣式 > id選擇器 > class選擇器 > 標籤元素 > 萬用字元(*) > 繼承 > 瀏覽器預設屬性
 
 
-### 使用到的語法 Javascript 
+## 使用到的語法 Javascript 
 
 - `includes()`: 本篇為`String.prototype.includes()`，判斷字串中是否包含某特定字串，並回傳 true 或 false。該includes()方法區分大小寫。
 
