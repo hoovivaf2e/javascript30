@@ -8,7 +8,7 @@
 
 ![](https://github.com/hoovivaf2e/javascript30/blob/master/01%20-%20JavaScript%20Drum%20Kit/demo_1.png)
 
-### 使用到的語法 Javascript
+## 使用到的語法 Javascript
 
 - const: Constants (常數)。區塊變數。const不能重複指定值，也不能重複宣告。
 
@@ -60,7 +60,7 @@
   array1.forEach(element => console.log(element));
   ```
 
-### 使用到的語法 CSS
+## 使用到的語法 CSS
 
 - background:
   可以在一個 background 中設置一個或多個的屬性。任何没有被指定的值都會被設定為它們的初始值。可以設置如下屬性，設置時可以按任意順序放置：
