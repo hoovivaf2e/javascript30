@@ -5,7 +5,7 @@ canvas.height = window.innerHeight;
 context.strokeStyle = '#BADA55';
 context.lineJoin = 'round';
 context.lineCap = 'round';
-//context.lineWidth = 20;
+context.lineWidth = 20;
 
 let isDrawing = false;
 let lastX = 0;
@@ -33,11 +33,11 @@ function draw(e) {
 		direction != direction;
 	}
 
-	/* if (direction) {
+	if (direction) {
 		context.lineWidth ++;
 	}else {
 		context.lineWidth --;
-	} */
+	}
 }
 
 
