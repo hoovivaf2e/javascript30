@@ -10,7 +10,7 @@
 
 ![](https://github.com/hoovivaf2e/javascript30/blob/master/02%20-%20JS%20and%20CSS%20Clock/demo_2.png)
 
-### 使用到的語法 Javascript
+## 使用到的語法 Javascript
 
 - getSeconds/getMinutes/getHours: 
     getSeconds() 返回時間的秒；getMinutes() 返回時間的分；getHours() 返回時間的時，皆以本地時間顯示。
@@ -42,7 +42,7 @@ function myFunction() {
 </script>
 ```
 
-### 使用到的語法 CSS
+## 使用到的語法 CSS
 
 - box-shadow: h-shadow v-shadow blur spread color inset/outset;
 
