@@ -2,7 +2,7 @@
 
 - 本章透過Html的 `<canvas>` 的路徑繪製搭配Javascript做出畫布的效果。效果包括: 顏色呈彩虹漸變，畫筆軌跡變粗。
 
-### 使用到的語法 Javascript
+## 使用到的語法 Javascript
 
 - `canvas`: HTML5 `<canvas>` 標籤只是圖形容器，必需使用javascript來繪製圖形。canvas 是一個二維網格，以左上角為起點，座標為(0,0)。
 
