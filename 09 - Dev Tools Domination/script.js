@@ -8,10 +8,19 @@ function makeGreen() {
 
 // Regular
 console.log('hello');
-// Interpolated
+// Interpolated text
 console.log('Hello I am a %s!', 'good man');
+// Number
+console.log('I am %d years old!', 7);
+// Float
+console.log('This has %f kg!', 2.5);
 // Styled
 console.log('%c I am some great sample', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue')
+
+// Opening DOM Elements
+console.log('%o',document.body); 
+console.log('%O', document.body);
+
 
 // warning!
 console.warn('Warning');
