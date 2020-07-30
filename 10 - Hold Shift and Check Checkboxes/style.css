@@ -32,7 +32,7 @@ input[type="checkbox"] {
 p {
   margin: 0;
   padding: 20px;
-  transition: background 0.2s;
+  transition: 0.2s;
   flex: 1;
   font-family: "helvetica neue";
   font-size: 20px;
