@@ -108,89 +108,89 @@ function updateButton() {
 
 寫一個`togglePlay`方法，根據影片的播放狀態來判斷該執行`play()`或`pause()`。
 
-    ```javascript
-    function togglePlay() {
-        video.paused ? video.play() : video.pause();
-    }
-    ```
+```javascript
+function togglePlay() {
+    video.paused ? video.play() : video.pause();
+}
+```
 
 ### Step 暫停/播放 icon 切換:
 
 為了讓使用者直觀地知道播放器狀態，監聽`play`跟`pause`按鈕，透過icon來顯示。播放時顯示 ▶，暫停時顯示 ❚ ❚。
 
-    ```javascript
-    function updateButton() {
-        const icon = this.paused ? '▶' : '❚ ❚';
-        toggle.textContent = icon;
-    }
+```javascript
+function updateButton() {
+    const icon = this.paused ? '▶' : '❚ ❚';
+    toggle.textContent = icon;
+}
+
+video.addEventListener('play', updateButton)；
+video.addEventListener('pause', updateButton)；
+```
     
-    video.addEventListener('play', updateButton)；
-    video.addEventListener('pause', updateButton)；
-    ```
-    
-    `this`指的是監聽的按鈕 'play' 或 'pause'。
+`this`指的是監聽的按鈕 'play' 或 'pause'。
 
 ### Step 快退/快進:
 在 HTML 中，快退/快進按鍵已添加 `data-skip` 屬性，`querySelectorAll`取得`nodeList`，對應的值即為快退/快進的秒數，而後用`forEach`遍歷，逐一添加click事件`skip`。用`currentTime`來修改影片當前時間。
 
-    ```javascript
-    function skip() {
-        video.currentTime += parseFloat(this.dataset.skip);
-    }
+```javascript
+function skip() {
+    video.currentTime += parseFloat(this.dataset.skip);
+}
 
-    skipButtons.forEach(button => button.addEventListener('click', skip));
-    ```
+skipButtons.forEach(button => button.addEventListener('click', skip));
+```
 
 ### Step 音量和播放速度:
 透過控制器上的兩個滑動條來控制影片的音量和播放速度。兩個滑動條皆為`<input type="range">`的元素。而 input 的 name 值和 video 對象中的屬性名稱是一樣的，所以當監聽到兩個 input 元素的 change 事件時，就可以很容易的透過其 value 值改變影片屬性了。
 
-    ```javascript
-    function handleRangeUpdate() {
-        video[this.name] = this.value;
-    }   //name分別設置為volume, playbackRate，剛好video的屬性中也有 volume 與 playbackRate
+```javascript
+function handleRangeUpdate() {
+    video[this.name] = this.value;
+}   //name分別設置為volume, playbackRate，剛好video的屬性中也有 volume 與 playbackRate
 
-    ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
-    ```
+ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
+```
 
 ### Step 進度條操作:
 在影片播放、滑鼠點擊和拖曳的時候改變影片播放的進度。
     
-    * 影片播放時
+* 影片播放時
 
-    ```javascript
-    function handleProgress() {
-        //  影片當前秒數/影片長度(s)*100
-        const percent = (video.currentTime / video.duration) * 100;
-        progressBar.style.flexBasis = `${percent}%`;
-    }
+```javascript
+function handleProgress() {
+    //  影片當前秒數/影片長度(s)*100
+    const percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.flexBasis = `${percent}%`;
+}
 
-    video.addEventListener('timeupdate', handleProgress);
-    ```
+video.addEventListener('timeupdate', handleProgress);
+```
 
-        - timeupdate 事件在 audio/video 的播放位置發生改變時觸發。
-        - timeupdate在以下情況會被調用:
-            - 播放 audio/video
-            - 移動 audio/video 播放位置
+- timeupdate 事件在 audio/video 的播放位置發生改變時觸發。
+- timeupdate在以下情況會被調用:
+    - 播放 audio/video
+    - 移動 audio/video 播放位置
     
-    * 滑鼠點擊時，根據點擊位置設置播放時間
+* 滑鼠點擊時，根據點擊位置設置播放時間
 
-    ```javascript
-    function scrub(e) {
-        const scrubTime = (e.offsetX / progress.offsetWidth) * vidoe.duration;
-        video.currentTime = scrubTime;
-    }
+```javascript
+function scrub(e) {
+    const scrubTime = (e.offsetX / progress.offsetWidth) * vidoe.duration;
+    video.currentTime = scrubTime;
+}
 
-    progress.addEventListener('click', scrub);
-    ```
+progress.addEventListener('click', scrub);
+```
 
-    * 進度條拖曳時，透過設置一個標誌來判斷當前是否出於拖曳狀態，然後配合`mousedown`, `mouseup` 事件來更新這個標誌：
+* 進度條拖曳時，透過設置一個標誌來判斷當前是否出於拖曳狀態，然後配合`mousedown`, `mouseup` 事件來更新這個標誌：
 
-    ```javascript
-    let mousedown = false;
-    // 滑鼠在 progress 上移動時更新進度
-    progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
-    // 滑鼠按下改變標誌
-    progress.addEventListener('mousedown', () => mousedown = true);
-    // 滑鼠抬起恢復標誌
-    progress.addEventListener('mouseup', () => mousedown = false);
-    ```
+```javascript
+let mousedown = false;
+// 滑鼠在 progress 上移動時更新進度
+progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
+// 滑鼠按下改變標誌
+progress.addEventListener('mousedown', () => mousedown = true);
+// 滑鼠抬起恢復標誌
+progress.addEventListener('mouseup', () => mousedown = false);
+```
