@@ -30,6 +30,7 @@ hero.addEventListener('mousemove', shadowMove);
 ```
 
 ### Step 2:
+完善`shadowMove()`
 
 ```javascript
 
