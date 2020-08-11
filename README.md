@@ -1,5 +1,5 @@
 # JavaScript 30 Day Challenge
-JavaScript30 是 Wes Bos 推出的一个 30 天挑戰。他提供了 30 個影音教程、30 個挑戰的起始檔案和 30 個挑戰的完整版原始碼。目的是幫助人們用純 JavaScript 來寫程式，不借助框架和庫，也不使用編譯器和引用。以下是 30 天挑戰 題目：
+[JavaScript30](https://javascript30.com/) 是 Wes Bos 推出的一个 30 天挑戰。他提供了 30 個影音教程、30 個挑戰的起始檔案和 30 個挑戰的完整版原始碼。目的是幫助人們用純 JavaScript 來寫程式，不借助框架和庫，也不使用編譯器和引用。以下是 30 天挑戰 題目：
 
   - 01 - JavaScript Drum Kit
   - 02 - JS and CSS Clock
