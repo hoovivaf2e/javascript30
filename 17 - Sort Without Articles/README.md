@@ -1,6 +1,6 @@
 # 17 - Sort Without Articles
 
-- 本章練習使用javascript在`<ul>`中加入`<li>`。首先對字串進行排序，排序時排除"The," "An,", "A"這些字眼後再進行排序，並把排序後的结果作為項目清單插入`<ol>`中。
+- 本章練習使用javascript在`<ul>`中加入`<li>`。首先對字串進行排序，排序時排除"The," "An,", "A"這些冠詞後再進行排序，並把排序後的結果作為項目清單插入`<ol>`中。
 
 ![](https://github.com/hoovivaf2e/javascript30/blob/master/17%20-%20Sort%20Without%20Articles/17_sortwithoutarticles.png)
 
