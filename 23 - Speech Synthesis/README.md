@@ -3,6 +3,7 @@
 - 本章練習使用WebAPI獲得瀏覽器支持的語言種類列表，並插入下拉選單中。
 在`<textarea>`中輸入文字，點擊`speak`按鈕後，瀏覽器會閱讀輸入的文字；在瀏覽器閱讀時，點擊stop按鈕，瀏覽器會停止閱讀；拖動rate和pitch可以改便閱讀速度和音高。
 
+![](https://github.com/hoovivaf2e/javascript30/blob/master/23%20-%20Speech%20Synthesis/23_speechsynthesis.png)
 
 ## 使用到的語法 Javascript
 
