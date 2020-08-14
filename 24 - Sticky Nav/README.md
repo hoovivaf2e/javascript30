@@ -2,7 +2,7 @@
 
 - 本章練習CSS `position: fixed;`。當頁面往下滾動超過導覽列時，不論頁面如何往下走，導覽列依舊固定在上方。當頁面向上滾動到看得見標題圖片時，導覽列恢復初始樣式。
 
-![]()
+![](https://github.com/hoovivaf2e/javascript30/blob/master/24%20-%20Sticky%20Nav/24_stickynav.gif)
 
 ## 步驟
 
