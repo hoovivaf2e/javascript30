@@ -2,7 +2,7 @@
 
 - 本章練習導覽列選單顯示。當滑鼠hover在不同的導覽列選項上時顯示選單內容。
 
-![]()
+![](https://github.com/hoovivaf2e/javascript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/26_stripefollowalongnav.png)
 
 ## 步驟
 
