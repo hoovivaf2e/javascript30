@@ -2,7 +2,7 @@
 
 - 本章練習當滑鼠拖動畫面移動時，捲軸隨之向拖動方向移動。
 
-![]()
+![](https://github.com/hoovivaf2e/javascript30/blob/master/27%20-%20Click%20and%20Drag/27_clickanddrag.png)
 
 ## 步驟
 
