@@ -2,7 +2,7 @@
 
 - 本章練習製作一個倒數計時器。可點選已經設置好的時間，也可以自行輸入時間。
 
-![]()
+![](https://github.com/hoovivaf2e/javascript30/blob/master/29%20-%20Countdown%20Timer/29_countdowntimer.png)
 
 ## 步驟
 
