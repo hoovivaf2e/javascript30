@@ -2,7 +2,7 @@
 
 - 本章練習拖曳右邊的進度條來設置影片的播放速度
 
-![]()
+![](https://github.com/hoovivaf2e/javascript30/blob/master/28%20-%20%20Video%20Speed%20Controll/28_videospeedcontroller.png)
 
 ## 步驟
 
